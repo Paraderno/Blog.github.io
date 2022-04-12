@@ -2092,7 +2092,7 @@ pre .javascript .function {
   box-sizing: border-box;
   width: 100%;
   overflow: hidden;
-  background: url("/images/first_screen.svg") center center/cover no-repeat;
+  background: url("https://raw.githubusercontent.com/Paraderno/image-hosting/master/5b56b43498a17.2qf57vs2u100.jpg") center center/cover no-repeat;
   background-position-y: 70px;
 }
 @media (max-width: 780px) {
