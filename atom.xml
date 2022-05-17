@@ -6,7 +6,7 @@
   <link href="https://paraderno.github.io/Blog.github.io/atom.xml" rel="self"/>
   
   <link href="https://paraderno.github.io/Blog.github.io/"/>
-  <updated>2022-05-16T04:46:38.508Z</updated>
+  <updated>2022-05-17T15:27:16.563Z</updated>
   <id>https://paraderno.github.io/Blog.github.io/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SCUACM2022集训前训练-数据结构</title>
+    <link href="https://paraderno.github.io/Blog.github.io/2022/05/16/SCUACM2022%E9%9B%86%E8%AE%AD%E5%89%8D%E8%AE%AD%E7%BB%83-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <id>https://paraderno.github.io/Blog.github.io/2022/05/16/SCUACM2022%E9%9B%86%E8%AE%AD%E5%89%8D%E8%AE%AD%E7%BB%83-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</id>
+    <published>2022-05-16T13:01:09.000Z</published>
+    <updated>2022-05-17T15:27:16.563Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title=" 数据结构"></a><span id="more"></span> 数据结构</h1><p><a class="link" href="https://vjudge.net/contest/489385">https://vjudge.net/contest/489385<i class="fas fa-external-link-alt"></i></a></p><h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>简单二分</p><p>但是卡精度这种东西，我不好评价</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">double</span> eps = <span class="number">1e-5</span>;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pi acos(-1.0)</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>{</span><br><span class="line"><span class="type">int</span> n,f;</span><br><span class="line">std::cin &gt;&gt; n &gt;&gt; f;</span><br><span class="line"><span class="function">std::vector&lt;<span class="type">double</span>&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) {</span><br><span class="line"><span class="type">int</span> x;</span><br><span class="line">std::cin &gt;&gt; x;</span><br><span class="line">a[i] = x * x;</span><br><span class="line">}</span><br><span class="line"><span class="type">double</span> l = <span class="number">0</span>, r = <span class="number">1e8</span>;</span><br><span class="line"><span class="keyword">while</span>(r - l &gt; eps) {</span><br><span class="line"><span class="type">double</span> mid = (l + r + eps) / <span class="number">2</span>;</span><br><span class="line"><span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">double</span> x : a) {</span><br><span class="line">cnt += x / mid;</span><br><span class="line">}</span><br><span class="line"><span class="keyword">if</span>(cnt &gt; f) l = mid;</span><br><span class="line"><span class="keyword">else</span> r = mid - eps;</span><br><span class="line">}</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%.4lf\n"</span>,pi * r);</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">}</span><br></pre></td></tr></table></figure><h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><p>简单尺取法，不会真有人用遍历加二分吧</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits.stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>{</span><br><span class="line"><span class="type">int</span> n,s;</span><br><span class="line">std::cin &gt;&gt; n &gt;&gt; s;</span><br><span class="line"><span class="function">std::vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; <span class="title">a</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line"><span class="function">std::vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; <span class="title">f</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">std::cin &gt;&gt; a[i];</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">f[i] = f[i - <span class="number">1</span>] + a[i];</span><br><span class="line"><span class="keyword">if</span>(f[n] &lt; s) std::cout &lt;&lt; <span class="number">0</span> &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line"><span class="keyword">else</span> {</span><br><span class="line"><span class="type">int</span> l = <span class="number">0</span>, r = <span class="number">0</span>;</span><br><span class="line"><span class="type">int</span> ans = n;</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>) {</span><br><span class="line">r++;</span><br><span class="line"><span class="keyword">if</span>(r &gt; n) <span class="keyword">break</span>;</span><br><span class="line"><span class="keyword">if</span>(f[r] - f[l] &lt; s) <span class="keyword">continue</span>;</span><br><span class="line"><span class="keyword">while</span>(f[r] - f[l] &gt;= s) l++;</span><br><span class="line">ans = std::<span class="built_in">min</span>(ans,r - l + <span class="number">1</span>);</span><br><span class="line">}</span><br><span class="line">std::cout &lt;&lt; ans &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">}</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;数据结构&quot;&gt;&lt;a href=&quot;#数据结构&quot; class=&quot;headerlink&quot; title=&quot; 数据结构&quot;&gt;&lt;/a&gt;</summary>
+    
+    
+    
+    
+    <category term="作业" scheme="https://paraderno.github.io/Blog.github.io/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SCUACM2022集训前训练-动态规划</title>
+    <link href="https://paraderno.github.io/Blog.github.io/2022/05/16/SCUACM2022%E9%9B%86%E8%AE%AD%E5%89%8D%E8%AE%AD%E7%BB%83-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    <id>https://paraderno.github.io/Blog.github.io/2022/05/16/SCUACM2022%E9%9B%86%E8%AE%AD%E5%89%8D%E8%AE%AD%E7%BB%83-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</id>
+    <published>2022-05-16T13:00:27.000Z</published>
+    <updated>2022-05-17T14:25:14.576Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="动态规划"><a href="#动态规划" class="headerlink" title=" 动态规划"></a><span id="more"></span> 动态规划</h1><p><a class="link" href="https://vjudge.net/contest/488877">https://vjudge.net/contest/488877<i class="fas fa-external-link-alt"></i></a></p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;动态规划&quot;&gt;&lt;a href=&quot;#动态规划&quot; class=&quot;headerlink&quot; title=&quot; 动态规划&quot;&gt;&lt;/a&gt;</summary>
+    
+    
+    
+    
+    <category term="作业" scheme="https://paraderno.github.io/Blog.github.io/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>虚拟偶像杂谈</title>
@@ -215,44 +253,6 @@
     <category term="比赛" scheme="https://paraderno.github.io/Blog.github.io/tags/%E6%AF%94%E8%B5%9B/"/>
     
     <category term="VP" scheme="https://paraderno.github.io/Blog.github.io/tags/VP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SCUACM2022集训前训练-数据结构</title>
-    <link href="https://paraderno.github.io/Blog.github.io/2022/04/16/SCUACM2022%E9%9B%86%E8%AE%AD%E5%89%8D%E8%AE%AD%E7%BB%83-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    <id>https://paraderno.github.io/Blog.github.io/2022/04/16/SCUACM2022%E9%9B%86%E8%AE%AD%E5%89%8D%E8%AE%AD%E7%BB%83-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</id>
-    <published>2022-04-16T13:01:09.000Z</published>
-    <updated>2022-04-16T13:03:09.185Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title=" 数据结构"></a><span id="more"></span> 数据结构</h1><p><a class="link" href="https://vjudge.net/contest/489385">https://vjudge.net/contest/489385<i class="fas fa-external-link-alt"></i></a></p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;数据结构&quot;&gt;&lt;a href=&quot;#数据结构&quot; class=&quot;headerlink&quot; title=&quot; 数据结构&quot;&gt;&lt;/a&gt;</summary>
-    
-    
-    
-    
-    <category term="作业" scheme="https://paraderno.github.io/Blog.github.io/tags/%E4%BD%9C%E4%B8%9A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SCUACM2022集训前训练-动态规划</title>
-    <link href="https://paraderno.github.io/Blog.github.io/2022/04/16/SCUACM2022%E9%9B%86%E8%AE%AD%E5%89%8D%E8%AE%AD%E7%BB%83-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    <id>https://paraderno.github.io/Blog.github.io/2022/04/16/SCUACM2022%E9%9B%86%E8%AE%AD%E5%89%8D%E8%AE%AD%E7%BB%83-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</id>
-    <published>2022-04-16T13:00:27.000Z</published>
-    <updated>2022-04-16T13:02:46.829Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="动态规划"><a href="#动态规划" class="headerlink" title=" 动态规划"></a><span id="more"></span> 动态规划</h1><p><a class="link" href="https://vjudge.net/contest/488877">https://vjudge.net/contest/488877<i class="fas fa-external-link-alt"></i></a></p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;动态规划&quot;&gt;&lt;a href=&quot;#动态规划&quot; class=&quot;headerlink&quot; title=&quot; 动态规划&quot;&gt;&lt;/a&gt;</summary>
-    
-    
-    
-    
-    <category term="作业" scheme="https://paraderno.github.io/Blog.github.io/tags/%E4%BD%9C%E4%B8%9A/"/>
     
   </entry>
   
