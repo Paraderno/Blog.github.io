@@ -308,27 +308,90 @@ mjx-container[display="true"] + br {
         <div class="tag-name"><i class="fas fa-tag"></i>&nbsp;读书笔记
         </div>
         <div class="tag-post-list">
-            
-<div class="archive-list-container">
-    
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[1]</span>
-            </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/Blog.github.io/2022/07/02/2022_07_02_%E3%80%8A%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E5%8F%B2%E3%80%8B%E9%9A%8F%E7%AC%94/"
-                        >《中华文明史》读书笔记</a>
-                        <span class="article-date">07-02</span>
-                    </li>
-                
-            </ul>
-        </section>
-    
-</div>
+            $archive-year-font-size = 1.8rem;
+$archive-year-count-font-size = 1.2rem;
+$article-title-font-size = 1.2rem;
+$article-date-font-size = 1rem;
+
+.archive-list-container {
+
+  .archive-item {
+    margin-bottom: $component-spacing-value;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .archive-item-header {
+      margin-bottom: 10px;
+
+      .archive-year {
+        font-size: $archive-year-font-size;
+
+        +keep-tablet() {
+          font-size: $archive-year-font-size - 0.2rem;
+        }
+
+        color: var(--second-text-color);
+        font-weight: 600;
+        margin-right: 6px;
+      }
+
+
+      .archive-year-post-count {
+        font-size: $archive-year-count-font-size;
+        font-weight: 500;
+        color: var(--second-text-color);
+
+        +keep-tablet() {
+          font-size: $archive-year-count-font-size * 0.9;
+        }
+      }
+
+    }
+
+
+    .article-list {
+
+      padding-left: 10px;
+
+      +keep-tablet() {
+        padding-left: 0;
+      }
+
+      .article-item {
+        font-size: 1rem;
+        margin-top: 18px;
+
+        +keep-tablet() {
+          margin-top: 16px;
+        }
+
+        +keep-mobile() {
+          margin-top: 14px;
+        }
+
+        &:hover {
+          a.article-title, .article-date {
+            color: var(--primary-color);
+          }
+        }
+
+
+        a.article-title {
+          color: var(--default-text-color);
+        }
+
+        .article-date {
+          font-size: $article-date-font-size;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+
 
         </div>
     </div>

@@ -308,55 +308,90 @@ mjx-container[display="true"] + br {
         <div class="tag-name"><i class="fas fa-tag"></i>&nbsp;作业
         </div>
         <div class="tag-post-list">
-            
-<div class="archive-list-container">
-    
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[5]</span>
-            </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/Blog.github.io/2022/04/26/2022_04_26_2022-4-30-%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"
-                        >2022.4.30 组合数学</a>
-                        <span class="article-date">04-26</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/Blog.github.io/2022/04/15/2022_04_15_2021-12-19-%E5%9B%BE%E8%AE%BADFS/"
-                        >2021.12.19 图论DFS</a>
-                        <span class="article-date">04-15</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/Blog.github.io/2022/04/13/2022_04_13_2022-4-17-%E5%80%8D%E5%A2%9ELCA/"
-                        >2022.4.17 倍增LCA</a>
-                        <span class="article-date">04-13</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/Blog.github.io/2022/04/13/2022_04_13_2022-4-10-BIT-IndexedSet/"
-                        >2022.4.10 BIT&amp;IndexedSet</a>
-                        <span class="article-date">04-13</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/Blog.github.io/2022/04/13/2022_04_13_2022-4-3-%E7%8A%B6%E5%8E%8BDP/"
-                        >2022.4.3 状压DP</a>
-                        <span class="article-date">04-13</span>
-                    </li>
-                
-            </ul>
-        </section>
-    
-</div>
+            $archive-year-font-size = 1.8rem;
+$archive-year-count-font-size = 1.2rem;
+$article-title-font-size = 1.2rem;
+$article-date-font-size = 1rem;
+
+.archive-list-container {
+
+  .archive-item {
+    margin-bottom: $component-spacing-value;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .archive-item-header {
+      margin-bottom: 10px;
+
+      .archive-year {
+        font-size: $archive-year-font-size;
+
+        +keep-tablet() {
+          font-size: $archive-year-font-size - 0.2rem;
+        }
+
+        color: var(--second-text-color);
+        font-weight: 600;
+        margin-right: 6px;
+      }
+
+
+      .archive-year-post-count {
+        font-size: $archive-year-count-font-size;
+        font-weight: 500;
+        color: var(--second-text-color);
+
+        +keep-tablet() {
+          font-size: $archive-year-count-font-size * 0.9;
+        }
+      }
+
+    }
+
+
+    .article-list {
+
+      padding-left: 10px;
+
+      +keep-tablet() {
+        padding-left: 0;
+      }
+
+      .article-item {
+        font-size: 1rem;
+        margin-top: 18px;
+
+        +keep-tablet() {
+          margin-top: 16px;
+        }
+
+        +keep-mobile() {
+          margin-top: 14px;
+        }
+
+        &:hover {
+          a.article-title, .article-date {
+            color: var(--primary-color);
+          }
+        }
+
+
+        a.article-title {
+          color: var(--default-text-color);
+        }
+
+        .article-date {
+          font-size: $article-date-font-size;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+
 
         </div>
     </div>
