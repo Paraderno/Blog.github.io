@@ -308,90 +308,62 @@ mjx-container[display="true"] + br {
         <div class="tag-name"><i class="fas fa-tag"></i>&nbsp;随笔
         </div>
         <div class="tag-post-list">
-            $archive-year-font-size = 1.8rem;
-$archive-year-count-font-size = 1.2rem;
-$article-title-font-size = 1.2rem;
-$article-date-font-size = 1rem;
-
-.archive-list-container {
-
-  .archive-item {
-    margin-bottom: $component-spacing-value;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    .archive-item-header {
-      margin-bottom: 10px;
-
-      .archive-year {
-        font-size: $archive-year-font-size;
-
-        +keep-tablet() {
-          font-size: $archive-year-font-size - 0.2rem;
-        }
-
-        color: var(--second-text-color);
-        font-weight: 600;
-        margin-right: 6px;
-      }
-
-
-      .archive-year-post-count {
-        font-size: $archive-year-count-font-size;
-        font-weight: 500;
-        color: var(--second-text-color);
-
-        +keep-tablet() {
-          font-size: $archive-year-count-font-size * 0.9;
-        }
-      }
-
-    }
-
-
-    .article-list {
-
-      padding-left: 10px;
-
-      +keep-tablet() {
-        padding-left: 0;
-      }
-
-      .article-item {
-        font-size: 1rem;
-        margin-top: 18px;
-
-        +keep-tablet() {
-          margin-top: 16px;
-        }
-
-        +keep-mobile() {
-          margin-top: 14px;
-        }
-
-        &:hover {
-          a.article-title, .article-date {
-            color: var(--primary-color);
-          }
-        }
-
-
-        a.article-title {
-          color: var(--default-text-color);
-        }
-
-        .article-date {
-          font-size: $article-date-font-size;
-          float: right;
-        }
-      }
-    }
-  }
-}
-
-
+            
+<div class="archive-list-container">
+    
+        <section class="archive-item">
+            <div class="archive-item-header">
+                <span class="archive-year">2022</span>
+                <span class="archive-year-post-count">[6]</span>
+            </div>
+            <ul class="article-list">
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/Blog.github.io/2022/07/16/2022_07_16_ACM%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95/"
+                        >ACM集训记录</a>
+                        <span class="article-date">07-16</span>
+                    </li>
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/Blog.github.io/2022/07/11/2022_07_11_%E5%AE%9E%E8%AE%AD%E6%97%A5%E8%AE%B0/"
+                        >实训日记</a>
+                        <span class="article-date">07-11</span>
+                    </li>
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/Blog.github.io/2022/06/26/2022_06_26_%E5%86%9B%E8%AE%AD%E6%97%A5%E8%AE%B0/"
+                        >军训日记</a>
+                        <span class="article-date">06-26</span>
+                    </li>
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/Blog.github.io/2022/05/18/2022_05_18_%E5%8D%81%E4%B8%83%E5%B2%81%E9%9A%8F%E7%AC%94/"
+                        >十七岁随笔</a>
+                        <span class="article-date">05-18</span>
+                    </li>
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/Blog.github.io/2022/05/12/2022_05_12_%E8%99%9A%E6%8B%9F%E5%81%B6%E5%83%8F%E6%9D%82%E8%B0%88/"
+                        >虚拟偶像杂谈</a>
+                        <span class="article-date">05-12</span>
+                    </li>
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/Blog.github.io/2022/05/09/2022_05_09_%E3%80%8A%E6%9C%BA%E5%B7%A7%E5%B0%91%E5%A5%B3%E4%B8%8D%E4%BC%9A%E5%8F%97%E4%BC%A4%E3%80%8B%E9%9A%8F%E7%AC%94/"
+                        >《机巧少女不会受伤》随笔</a>
+                        <span class="article-date">05-09</span>
+                    </li>
+                
+            </ul>
+        </section>
+    
+</div>
 
         </div>
     </div>
