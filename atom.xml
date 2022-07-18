@@ -6,7 +6,7 @@
   <link href="https://paraderno.github.io/Blog.github.io/atom.xml" rel="self"/>
   
   <link href="https://paraderno.github.io/Blog.github.io/"/>
-  <updated>2022-07-16T11:57:24.759Z</updated>
+  <updated>2022-07-16T12:00:09.090Z</updated>
   <id>https://paraderno.github.io/Blog.github.io/</id>
   
   <author>
@@ -21,15 +21,12 @@
     <link href="https://paraderno.github.io/Blog.github.io/2022/07/16/2022_07_16_ACM%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95/"/>
     <id>https://paraderno.github.io/Blog.github.io/2022/07/16/2022_07_16_ACM%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95/</id>
     <published>2022-07-16T10:30:00.000Z</published>
-    <updated>2022-07-16T11:57:24.759Z</updated>
+    <updated>2022-07-16T12:00:09.090Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>现有水平：NOIP省一中游水平，为队伍兜底，大部分方向的算法都有涉猎，擅长一般的线段树、树状数组、二分、倍增等数据结构与算法，构造与数论方向较弱，但队伍中有一位擅长数论的队友，在团队比赛中互相补足短板。</p><p>暑期计划：以多校联赛为主，尽可能多打<code>Codeforces div2</code> </p><p>目标：区域赛保银牌争金牌</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title=" 前言"></a><span id="more"></span> 前言</h2><p>现有水平：NOIP省一中游水平，为队伍兜底，大部分方向的算法都有涉猎，擅长一般的线段树、树状数组、二分、倍增等数据结构与算法，构造与数论方向较弱，但队伍中有一位擅长数论的队友，在团队比赛中互相补足短板。</p><p>暑期计划：以多校联赛为主，尽可能多打<code>Codeforces div2</code></p><p>目标：区域赛保银牌争金牌</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;现有水平：NOIP省一中游水平，为队伍兜底，大部分方向的算法都有涉猎，擅长一般的线段树、树状数组、二分、倍增等数据结构与算法，构造与数论方向</summary>
-      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot; 前言&quot;&gt;&lt;/a&gt;</summary>
     
     
     
@@ -43,9 +40,9 @@
     <link href="https://paraderno.github.io/Blog.github.io/2022/07/11/2022_07_11_%E5%AE%9E%E8%AE%AD%E6%97%A5%E8%AE%B0/"/>
     <id>https://paraderno.github.io/Blog.github.io/2022/07/11/2022_07_11_%E5%AE%9E%E8%AE%AD%E6%97%A5%E8%AE%B0/</id>
     <published>2022-07-11T00:30:00.000Z</published>
-    <updated>2022-07-16T10:40:59.464Z</updated>
+    <updated>2022-07-18T06:43:17.760Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="DAY1"><a href="#DAY1" class="headerlink" title=" DAY1"></a><span id="more"></span> DAY1</h2><p>选了个冷门项目，一共就七个学生<br>老师感觉挺和蔼的</p><p>白嫖了一份<code>Typora</code>的注册码，虽然现在改用<code>VS Code</code>写<code>markdown</code>了<br>白嫖了一份<code>Visual Studio</code>的企业版注册码，在尝试学习这个软件</p><p>今天上课在讲数组、指针这些东西<br>感觉对栈空间和堆空间的概念更深了一点，然后学习了一下分配空间<code>malloc</code> <code>calloc</code> <code>realloc</code> </p><p>晚上完成了今日的作业，一个简单的增删改查管理系统<br>成为犇犇的第一小步Ovo</p><h2 id="DAY2"><a href="#DAY2" class="headerlink" title="DAY2"></a>DAY2</h2><p>上午在学习函数<br>在慢慢改变以前搞竞赛的编程习惯，毕竟做项目是一个大工程，不是只有一个程序的，那么也很少会用到全局变量<br>通过函数传递数组的地址，实现数组的增删改查</p><p>还学习了一个函数指针，第一感觉像是 Java 中的多态。就他是什么样子什么子类，就调用那个子类的函数，超类的那个函数就是个抽象函数。<br>老师说是 Java 中的反射，减少代码之间的耦合度。<br>这学期没学过反射，后面再去了解吧</p><h2 id="DAY3"><a href="#DAY3" class="headerlink" title="DAY3"></a>DAY3</h2><p>学习需求分析<br>感觉写文档什么的好麻烦</p><p>上午和下午都在做需求分析文档和项目设计文档<br>给老师看了，又得大改Ovo</p><h2 id="DAY4"><a href="#DAY4" class="headerlink" title="DAY4"></a>DAY4</h2><p>上午学习链表<br>写完了程序中的链表部分，写了几个功能</p><p>第一次在中午十二点到一点这段时间写项目<br>上头了，虽然下午放学后并不会上头</p><p>下午在学习控制台美化，老师自己写了一个封装windows函数的库<br>这部分内容就交给我的hxd们了，写控制台真的折磨TvT</p><p>之后接着完善程序，又写了几个功能<br>等着hxd写文件读入写出后合并一下项目</p><p>下午放学前试着用用hxd写的控制台美化，打开一看，36个报错<br>为什么他那边没有报错呢，懵</p><h2 id="DAY5"><a href="#DAY5" class="headerlink" title="DAY5"></a>DAY5</h2><p>似乎把老师给的库函数从.cpp改成.c就好了<br>虽然我挺想用c++写项目，感觉c太麻烦了</p><p>操作台还是挂了，不知道哪里有问题</p><p>最后团队换了个编译器，在<code>Visual Studio</code>上重构了一下</p><h2 id="DAY6"><a href="#DAY6" class="headerlink" title="DAY6"></a>DAY6</h2><p>控制台可以用了！！！<br>实现了一半左右的页面跳转<br>明天再接再厉</p><p>下午老师讲课时聊了很多其他的<br>比如少学java，因为java很简单，到最后都是拼加班拼熬夜<br>然后知道了一些新的东西，大数据可视化啊，UE啊之类的</p><p>暑假的ACM集训改线上了，空余时间打算学学UE，学学3D制作</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="DAY1"><a href="#DAY1" class="headerlink" title=" DAY1"></a><span id="more"></span> DAY1</h2><p>选了个冷门项目，一共就七个学生<br>老师感觉挺和蔼的</p><p>白嫖了一份<code>Typora</code>的注册码，虽然现在改用<code>VS Code</code>写<code>markdown</code>了<br>白嫖了一份<code>Visual Studio</code>的企业版注册码，在尝试学习这个软件</p><p>今天上课在讲数组、指针这些东西<br>感觉对栈空间和堆空间的概念更深了一点，然后学习了一下分配空间<code>malloc</code> <code>calloc</code> <code>realloc</code></p><p>晚上完成了今日的作业，一个简单的增删改查管理系统<br>成为犇犇的第一小步Ovo</p><h2 id="DAY2"><a href="#DAY2" class="headerlink" title="DAY2"></a>DAY2</h2><p>上午在学习函数<br>在慢慢改变以前搞竞赛的编程习惯，毕竟做项目是一个大工程，不是只有一个程序的，那么也很少会用到全局变量<br>通过函数传递数组的地址，实现数组的增删改查</p><p>还学习了一个函数指针，第一感觉像是 Java 中的多态。就他是什么样子什么子类，就调用那个子类的函数，超类的那个函数就是个抽象函数。<br>老师说是 Java 中的反射，减少代码之间的耦合度。<br>这学期没学过反射，后面再去了解吧</p><h2 id="DAY3"><a href="#DAY3" class="headerlink" title="DAY3"></a>DAY3</h2><p>学习需求分析<br>感觉写文档什么的好麻烦</p><p>上午和下午都在做需求分析文档和项目设计文档<br>给老师看了，又得大改Ovo</p><h2 id="DAY4"><a href="#DAY4" class="headerlink" title="DAY4"></a>DAY4</h2><p>上午学习链表<br>写完了程序中的链表部分，写了几个功能</p><p>第一次在中午十二点到一点这段时间写项目<br>上头了，虽然下午放学后并不会上头</p><p>下午在学习控制台美化，老师自己写了一个封装windows函数的库<br>这部分内容就交给我的hxd们了，写控制台真的折磨TvT</p><p>之后接着完善程序，又写了几个功能<br>等着hxd写文件读入写出后合并一下项目</p><p>下午放学前试着用用hxd写的控制台美化，打开一看，36个报错<br>为什么他那边没有报错呢，懵</p><h2 id="DAY5"><a href="#DAY5" class="headerlink" title="DAY5"></a>DAY5</h2><p>似乎把老师给的库函数从.cpp改成.c就好了<br>虽然我挺想用c++写项目，感觉c太麻烦了</p><p>操作台还是挂了，不知道哪里有问题</p><p>最后团队换了个编译器，在<code>Visual Studio</code>上重构了一下</p><h2 id="DAY6"><a href="#DAY6" class="headerlink" title="DAY6"></a>DAY6</h2><p>控制台可以用了！！！<br>实现了一半左右的页面跳转<br>明天再接再厉</p><p>下午老师讲课时聊了很多其他的<br>比如少学java，因为java很简单，到最后都是拼加班拼熬夜<br>然后知道了一些新的东西，大数据可视化啊，UE啊之类的</p><p>暑假的ACM集训改线上了，空余时间打算学学UE，学学3D制作</p><h2 id="DAY7"><a href="#DAY7" class="headerlink" title="DAY7"></a>DAY7</h2><p>今天学了Java还有Maven插件</p><p>继续完善项目，基本写完了，下午再完善完善，明天测试</p><p>完成项目了，但工程文件出了点问题，报出几十个错误</p><p>但无法识别<code>malloc</code>这个函数，我是真的。。。</p><p>后面重建工程文件了</p><h2 id="DAY8"><a href="#DAY8" class="headerlink" title="DAY8"></a>DAY8</h2><p>项目测试基本完成<br>开始做PPT汇报准备辽</p><p>今天老师讲了SSM和SSH，主要在讲Spring架构<br>关于XML还有注解对编码的简化<br>学会走路不难，难的是学会修路<br>虽然并不是很想去搞Java修路搭建Spring架构之类的</p><p>开始琢磨UE5去了，还在安装<br>打算学点可视化编程，以后再学游戏制作吧</p>]]></content>
     
     
     <summary type="html">&lt;h2 id=&quot;DAY1&quot;&gt;&lt;a href=&quot;#DAY1&quot; class=&quot;headerlink&quot; title=&quot; DAY1&quot;&gt;&lt;/a&gt;</summary>
